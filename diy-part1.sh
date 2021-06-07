@@ -15,13 +15,14 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-git clone https://github.com/vernesong/OpenClash.git
-git clone https://github.com/yichya/luci-app-xray.git
-git clone https://github.com/XTLS/Xray-core.git
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
+
 # fw876/helloworld
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Lienol/openwrt-package
 sed -i '$a src-git lienol https://github.com/Lancenas/lienol-openwrt-package.git' feeds.conf.default
 
+cd package
+git clone https://github.com/destan19/OpenAppFilter.git
+git clone https://github.com/XTLS/Xray-core.git
+git clone https://github.com/yichya/luci-app-xray.git
