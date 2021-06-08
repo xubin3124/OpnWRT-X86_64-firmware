@@ -26,3 +26,4 @@ cd package
 git clone https://github.com/destan19/OpenAppFilter.git
 git clone https://github.com/XTLS/Xray-core.git
 git clone https://github.com/yichya/luci-app-xray.git
+git clone https://github.com/yichya/openwrt-xray.git
