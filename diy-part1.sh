@@ -22,8 +22,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Lienol/openwrt-package
 sed -i '$a src-git lienol https://github.com/Lancenas/lienol-openwrt-package.git' feeds.conf.default
 
-cd package
-git clone https://github.com/destan19/OpenAppFilter.git
-git clone https://github.com/XTLS/Xray-core.git
-git clone https://github.com/yichya/luci-app-xray.git
-git clone https://github.com/yichya/openwrt-xray.git
+sed -i '$a src-git destan19 https://github.com/destan19/OpenAppFilter.git' feeds.conf.default
+sed -i '$a src-git XTLS https://github.com/XTLS/Xray-core.git' feeds.conf.default
+sed -i '$a src-git yichya https://github.com/yichya/luci-app-xray.git' feeds.conf.default
+sed -i '$a src-git yichya https://github.com/yichya/openwrt-xray.git' feeds.conf.default
